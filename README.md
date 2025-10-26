@@ -18,7 +18,7 @@ Esta fase se llevó a cabo para limpiar, entender y preparar el dataset para el 
 
 1.  **Limpieza de Outliers:** Se eliminaron 9 *outliers* de la variable BMI (usando el método IQR) para evitar sesgos en el entrenamiento.
 2.  **Transformación del Target:** La variable objetivo (`charges`) fue transformada logarítmicamente (`np.log()`) debido a su fuerte sesgo a la derecha, mejorando la distribución para el modelado.
-3.  **Codificación y División:** Las variables categóricas fueron codificadas (**One-Hot Encoding**). El dataset preprocesado se dividió en conjuntos de entrenamiento y prueba (80/20).
+3.  **Codificación y División:** Las variables categóricas fueron codificadas (One-Hot Encoding). El dataset preprocesado se dividió en conjuntos de entrenamiento y prueba (80/20).
 
 ---
 
@@ -47,5 +47,6 @@ El análisis de la **Importancia de Variables** del modelo Random Forest reveló
 3.  **BMI (10.1%)**: Contribuye significativamente como indicador de riesgo de salud.
 
 El modelo final es robusto, con un $R^2$ del 85.74%, lo que proporciona una estimación de gastos médicos de alta precisión.
+
 
 
